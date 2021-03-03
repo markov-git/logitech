@@ -2,20 +2,19 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.heading {
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
     font-style: normal;
     font-weight: 900;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
     color: #2F3132;
-    -webkit-text-stroke: 1px #000000;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.header {
-    display: flex;
-    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .text {
@@ -30,7 +29,7 @@ body {
 
 .text_margin {
     margin-left: 34px;
-    margin-right: 32px;
+    margin-right: 33px;
 }
 
 .text_flow {
@@ -54,11 +53,11 @@ body {
 .top__img {
     margin-top: 94px;
     height: 230px;
-    background-image: url('img/MX-Master 1.png');
+    background-image: url('./img/MX-Master 1.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 41px;
+    margin-bottom: 67px;
 }
 
 .top__text-margin {
@@ -73,16 +72,6 @@ body {
 .center-content {
     display: flex;
     justify-content: center;
-}
-
-.title {
-    font-style: normal;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    color: #2F3132;
-    margin-bottom: 20px;
 }
 
 .bluetooth {
@@ -108,7 +97,7 @@ body {
 
 .bluetooth__image {
     height: 288px;
-    background-image: url('img/High_Resolution_PNG-MX Master 3 LEFT GRAPHITE 1.png');
+    background-image: url('./img/High_Resolution_PNG-MX Master 3 LEFT GRAPHITE 1.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -116,7 +105,7 @@ body {
 
 .info {
     padding-top: 70px;
-    padding-bottom: 77px;
+    padding-bottom: 63px;
 }
 
 .info__content {
@@ -143,6 +132,7 @@ body {
     line-height: 16px;
     text-align: center;
     color: #2F3132;
+    margin-bottom: 70px;
 }
 
 .info__text {
@@ -160,16 +150,21 @@ body {
 
 .flow {
     padding-top: 70px;
-    padding-bottom: 218px;
-    background-image: url('img/High_Resolution_JPG-MX Lifestyle 2346 1.png');
+    padding-bottom: 219px;
+    background-image: url('./img/High_Resolution_JPG-MX Lifestyle 2346 1.png');
     background-color: #EDEDED;
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
+.flow p.text:first-of-type {
+    margin-bottom: 20px;
+}
+
 .flow__ol {
     margin-top: 36px;
     margin-left: 54px;
+    padding-left: 0;
     list-style-position: inside;
 }
 
@@ -179,7 +174,7 @@ body {
 }
 
 .settings__slider {
-    margin: 35px 22px 98px 23px;
+    margin: 35px 22px 95px 23px;
 }
 
 .settings__content {
@@ -194,13 +189,33 @@ body {
 }
 
 .mouse__text {
-    padding-top: 70px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.mouse__img {
+    height: 310px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .mouse__img_1 {
-    background-image: url('img/image 1.png');
+    background-image: url('./img/image 1.png');
 }
 
 .mouse__img_2 {
-    background-image: url('img/image 2.png');
+    background-image: url('./img/image 2.png');
+}
+
+.footer {
+    background-color: #2F3132;
+    height: 75px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 7px;
+    line-height: 8px;
+    text-align: center;
+    color: #C7C8C8;
+    padding-top: 22px;
 }
