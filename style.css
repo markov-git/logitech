@@ -192,3 +192,15 @@ body {
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
+.mouse__text {
+    padding-top: 70px;
+}
+
+.mouse__img_1 {
+    background-image: url('img/image 1.png');
+}
+
+.mouse__img_2 {
+    background-image: url('img/image 2.png');
+}
