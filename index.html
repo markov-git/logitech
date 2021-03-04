@@ -31,22 +31,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">РАБОТАЙТЕ БЕЗ ПРОВОДОВ</a>
+              <a class="nav-link active" aria-current="page" href="#bluetooth">РАБОТАЙТЕ БЕЗ ПРОВОДОВ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ГДЕ УГОДНО</a>
+              <a class="nav-link" href="#info">ГДЕ УГОДНО</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">С КОМФОРТОМ</a>
+              <a class="nav-link" href="#mouse">С КОМФОРТОМ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">С РАЗНЫХ УСТРОЙСТВ</a>
+              <a class="nav-link" href="#flow">С РАЗНЫХ УСТРОЙСТВ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">В ЛЮБОЕ ВРЕМЯ</a>
+              <a class="nav-link" href="#settings">В ЛЮБОЕ ВРЕМЯ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">И ЕЩЕ БЫСТРЕЕ</a>
+              <a class="nav-link" href="#mouse">И ЕЩЕ БЫСТРЕЕ</a>
             </li>
           </ul>
         </div>
@@ -75,7 +75,9 @@
     </svg>
   </div>
   <h2 class="title">БЕЗ ПРОВОДОВ</h2>
-  <p class="text text_margin center">Беспроводная мышь MX Master 3 работает без проводов до нескольких месяцев. Вы закроете
+  <p class="text text_margin center_top-text">Беспроводная мышь MX Master 3 работает без проводов до нескольких месяцев.
+    Вы
+    закроете
     приоритетные задачи прежде, чем понадобится подзарядка.</p>
   <div class="center_bluetooth">
     <div class="bluetooth__image">
@@ -84,7 +86,7 @@
   </div>
 </section>
 
-<section class="info center">
+<section class="info" id="info">
   <h2 class="title">ЗА ЛЮБЫМ СТОЛОМ</h2>
   <p class="text info__text">Исследуйте ландшафты своего дома, не отвлекаясь от работы.
     MX Master 3 достаточно компактная, чтобы сменить рабочее место и перенестись с ноутбуком на кухню.</p>
@@ -98,43 +100,87 @@
       <p class="text">точек на дюйм чувствительность датчика</p>
     </div>
   </div>
-  <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
+  <div class="info__slider center_slider">
+    <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators soft-slider">
+        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0"
+                class="active btn0 btn"
+                aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"
+                class="btn1 btn"
+                aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"
+                class="btn2 btn"
+                aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="3"
+                class="btn3 btn"
+                aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="4"
+                class="btn4 btn"
+                aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <picture>
+            <source class="d-block w-100" srcset="./img/mob/soft-slider-image/wood.jpg" media="(max-width: 767px)">
+            <source class="d-block w-100" srcset="./img/tablet/soft-slider-image/wood.png" media="(max-width: 1023px)">
+            <source class="d-block w-100" srcset="./img/desktop/soft-slider-image/wood.png">
+            <img class="d-block w-100" src="./img/tablet/soft-slider-image/wood.png" alt="img">
+          </picture>
+        </div>
+        <div class="carousel-item">
+          <picture>
+            <source class="d-block w-100" srcset="./img/mob/soft-slider-image/glass.png" media="(max-width: 767px)">
+            <source class="d-block w-100" srcset="./img/tablet/soft-slider-image/glass.png" media="(max-width: 1023px)">
+            <source class="d-block w-100" srcset="./img/desktop/soft-slider-image/glass.png">
+            <img class="d-block w-100" src="./img/tablet/soft-slider-image/glass.png" alt="img">
+          </picture>
+        </div>
+        <div class="carousel-item">
+          <picture>
+            <source class="d-block w-100" srcset="./img/mob/soft-slider-image/linoleum.png" media="(max-width: 767px)">
+            <source class="d-block w-100" srcset="./img/tablet/soft-slider-image/linoleum.png" media="(max-width: 1023px)">
+            <source class="d-block w-100" srcset="./img/desktop/soft-slider-image/linoleum.png">
+            <img class="d-block w-100" src="./img/tablet/soft-slider-image/linoleum.png" alt="img">
+          </picture>
+        </div>
+        <div class="carousel-item">
+          <picture>
+            <source class="d-block w-100" srcset="./img/mob/soft-slider-image/cloth.png" media="(max-width: 767px)">
+            <source class="d-block w-100" srcset="./img/tablet/soft-slider-image/cloth.png" media="(max-width: 1023px)">
+            <source class="d-block w-100" srcset="./img/desktop/soft-slider-image/cloth.png">
+            <img class="d-block w-100" src="./img/tablet/soft-slider-image/cloth.png" alt="img">
+          </picture>
+        </div>
+        <div class="carousel-item">
+          <picture>
+            <source class="d-block w-100" srcset="./img/mob/soft-slider-image/marble.png" media="(max-width: 767px)">
+            <source class="d-block w-100" srcset="./img/tablet/soft-slider-image/marble.png" media="(max-width: 1023px)">
+            <source class="d-block w-100" srcset="./img/desktop/soft-slider-image/marble.png">
+            <img class="d-block w-100" src="./img/tablet/soft-slider-image/marble.png" alt="img">
+          </picture>
+        </div>
+      </div>
+      <button class="carousel-control-prev soft-slider-control"
+              type="button" data-bs-target="#carousel1"
+              data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next soft-slider-control"
+              type="button" data-bs-target="#carousel1"
+              data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/mob/wood.png" class="d-block w-100" alt="image">
-      </div>
-      <div class="carousel-item">
-        <img src="img/mob/wood.png" class="d-block w-100" alt="image">
-      </div>
-      <div class="carousel-item">
-        <img src="img/mob/wood.png" class="d-block w-100" alt="image">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
   <h3 class="info__title">Переключите поверхность</h3>
-  <p class="text text_margin">Благодаря технологии Logitecch Darkfierd,
+  <p class="text text_margin info__text">Благодаря технологии Logitecch Darkfierd,
     MX Master 3 работает на любой поверхности, даже на стекле.</p>
 </section>
 
-<section class="flow center">
+<section class="flow center_flow" id="flow">
   <h2 class="title">ОДНОВРЕМЕННО С НЕСКОЛЬКИХ УСТРОЙСТВ</h2>
   <p class="text text_margin">С технологией Flow вы сможете работать одновременно на нескольких компьютерах, мгновенно
     переключаясь между разными операционными системами — даже между Windows&reg; и macOS.
@@ -151,18 +197,23 @@
   </ol>
 </section>
 
-<section class="settings center">
+<section class="settings center" id="settings">
   <h2 class="title">С ИНДИВИДУАЛЬНЫМИ НАСТРОЙКАМИ</h2>
   <p class="text text_margin">Мышь MX Master 3 адаптируется под ваши рабочие процессы. Благодаря
     индивидуальным настройкам, вы сможете настроить кнопки и жесты практически
     под любое используемое приложение.</p>
+
+  <div class="settings__picture">
+    <img src="./img/desktop/744aa55%201.png" alt="picture">
+  </div>
+
   <div id="carousel2" class="carousel slide settings__slider" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+      <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active"
               aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+      <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1"
               aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+      <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2"
               aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
@@ -187,27 +238,30 @@
       <img class="settings__img" src="./img/mob/apps/9def687.svg" alt="Excel">
       <img class="settings__img" src="./img/mob/apps/95dc294.svg" alt="Players">
     </div>
-    <p class="text text_settings">Начните работать продуктивнее с момента покупки — устройство
+    <p class="text text_settings ">Начните работать продуктивнее с момента покупки — устройство
       предварительно оптимизировано под популярные приложения
       на Windows и Mac.</p>
   </div>
 </section>
 
-<section class="mouse center">
-  <div class="mouse__text">
-    <h2 class="title">КОМФОРТНО. <br>ЭРГОНОМИЧНО. ИНТУИТИВНО.</h2>
-    <p class="text text_margin">Дизайн мыши MX Master 3 разработан так, чтобы с точностью повторять форму вашей ладони.
-      Но не менее важны колесико прокрутки для большого пальца
-      и расположение кнопок жестов, с&nbsp;которыми вы будете творить уверенно как никогда.</p>
+<section class="mouse center_mouse" id="mouse">
+  <div class="reverse">
+    <div class="mouse__item mouse__text">
+      <h2 class="title">КОМФОРТНО. <br>ЭРГОНОМИЧНО. ИНТУИТИВНО.</h2>
+      <p class="text text_margin">Дизайн мыши MX Master 3 разработан так, чтобы с точностью повторять форму вашей
+        ладони.
+        Но не менее важны колесико прокрутки для большого пальца
+        и расположение кнопок жестов, с&nbsp;которыми вы будете творить уверенно как никогда.</p>
+    </div>
+    <div class="mouse__item mouse__img mouse__img_1"></div>
   </div>
-  <div class="mouse__img mouse__img_1"></div>
-  <div class="mouse__text">
+  <div class="mouse__item mouse__text">
     <h2 class="title">БЫСТРЕЕ, <br>ЧЕМ КОГДА-ЛИБО</h2>
     <p class="text text_margin">Компьютерная мышь MX Master 3 предлагает ультимативный механизм прокрутки
       со скоростью 1000 строк за 1 секунду.
       С&nbsp;точностью до пикселя. Бесшумно.</p>
   </div>
-  <div class="mouse__img mouse__img_2"></div>
+  <div class="mouse__item mouse__img mouse__img_2"></div>
 </section>
 
 <footer class="footer">

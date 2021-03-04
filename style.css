@@ -2,10 +2,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/*.header {*/
-/*  display: flex;*/
-/*  justify-content: center;*/
-/*}*/
 .navbar {
   padding-top: 25px;
 }
@@ -170,13 +166,84 @@ body {
   margin-bottom: 28px;
 }
 
+.soft-slider {
+  margin: 0;
+  top: calc(100% + 64px);
+  bottom: -95px;
+}
+
+.soft-slider .btn {
+  border: none;
+  border-radius: 50%;
+  margin: 0 23px 0 0;
+  opacity: 1;
+  padding: 0;
+  width: 31px;
+  height: 31px;
+  background-size: contain;
+}
+
+.soft-slider .btn:last-of-type {
+  margin-right: 0;
+}
+
+.soft-slider .btn0 {
+  background-image: url('./img/soft-slider/0.png');
+}
+
+.soft-slider .btn1 {
+  background-image: url('./img/soft-slider/1.png');
+}
+
+.soft-slider .btn2 {
+  background-image: url('./img/soft-slider/2.png');
+}
+
+.soft-slider .btn3 {
+  background-image: url('./img/soft-slider/3.png');
+}
+
+.soft-slider .btn4 {
+  background-image: url('./img/soft-slider/4.png');
+}
+
+.soft-slider-control {
+  top: calc(100% + 64px);
+  bottom: -95px;
+  z-index: 3;
+  opacity: 1;
+  width: 23px;
+}
+
+.carousel-control-prev {
+  width: 9px;
+  left: calc(50% - 159px);
+}
+
+.carousel-control-next {
+  width: 9px;
+  right: calc(50% - 159px);
+}
+
+.soft-slider-control .carousel-control-prev-icon {
+  background-image: url('./img/soft-slider/arrow-left.svg');
+  background-repeat: no-repeat;
+  background-size: 9px 18px;
+}
+
+.soft-slider-control .carousel-control-next-icon {
+  background-image: url('./img/soft-slider/arrow-right.svg');
+  background-repeat: no-repeat;
+  background-size: 9px 18px;
+}
+
 .info__item .title {
   margin-bottom: 5px;
 }
 
 .flow {
   padding-top: 70px;
-  padding-bottom: 219px;
+  padding-bottom: 58vw;
   background-image: url('./img/mob/High_Resolution_JPG-MX Lifestyle 2346 1.png');
   background-color: #EDEDED;
   background-repeat: no-repeat;
@@ -199,6 +266,10 @@ body {
 .settings {
   padding-top: 70px;
   background-color: #EDEDED;
+}
+
+.settings__picture {
+  display: none;
 }
 
 .settings__slider {
@@ -356,6 +427,38 @@ body {
 
   .carousel {
     margin-bottom: 50px;
+  }
+
+  .soft-slider .btn {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 30px;
+  }
+
+  .soft-slider {
+    top: calc(100% + 101px);
+    bottom: -101px;
+  }
+
+  .soft-slider-control {
+    top: calc(100% + 121px);
+    bottom: -121px;
+    width: 12px;
+  }
+
+  .soft-slider-control .carousel-control-prev-icon,
+  .soft-slider-control .carousel-control-next-icon {
+    background-size: 12px 24px;
+  }
+
+  .carousel-control-prev {
+    width: 12px;
+    left: calc(50% - 202px);
+  }
+
+  .carousel-control-next {
+    width: 12px;
+    right: calc(50% - 202px);
   }
 
   .flow {
@@ -547,8 +650,12 @@ body {
     display: none;
   }
 
+  .top {
+    padding-bottom: 56px;
+  }
+
   .top__img {
-    margin-top: 20px;
+    margin-top: -10px;
     margin-bottom: 8px;
     padding-top: 80px;
     height: 671px;
@@ -562,8 +669,14 @@ body {
   }
 
   .text {
+
     font-size: 20px;
     line-height: 23px;
+  }
+
+  .info__text {
+    width: 765px;
+    margin: auto;
   }
 
   .top__arrow {
@@ -571,13 +684,26 @@ body {
   }
 
   .bluetooth {
-    padding-bottom: 69px;
+    padding-top: 45px;
+    padding-bottom: 48px;
+  }
+
+  .center_top-text {
+    width: 761px;
+    margin: auto;
+  }
+
+  .bluetooth__icon {
+    margin-bottom: 41px;
+  }
+
+  .bluetooth__heading {
+    margin-top: 14px;
   }
 
   .bluetooth__image {
     height: 426px;
-    background:
-        url('./img/desktop/High_Resolution_PNG-MX Master 3 FRONT GRAPHITE 1.png') no-repeat 0 119px,
+    background: url('./img/desktop/High_Resolution_PNG-MX Master 3 FRONT GRAPHITE 1.png') no-repeat 0 119px,
     url('./img/desktop/High_Resolution_PNG-MX Master 3 LEFT GRAPHITE 1 (2).png') no-repeat right 119px;
     margin: 0;
   }
@@ -603,6 +729,203 @@ body {
     padding-top: 45px;
   }
 
+  .info {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .info__title {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 90px;
+  }
+
+  .carousel {
+    margin-bottom: 39px;
+  }
+
+  .soft-slider {
+    top: calc(100% + 77px);
+    bottom: -77px;
+  }
+
+  .soft-slider-control {
+    top: calc(100% + 97px);
+    bottom: -97px;
+    width: 12px;
+  }
+
+  .info__item {
+    min-height: 140px;
+    min-width: 236px;
+    padding: 0 24px;
+  }
+
+  .info__item .title {
+    margin-bottom: 5px;
+  }
+
+  .center_slider {
+    padding: 0 calc(50% - 640px);
+  }
+
+  .flow {
+    background-image: url('./img/tablet/High_Resolution_JPG-MX Lifestyle 2346 2.png');
+    padding-top: 70px;
+    padding-bottom: 654px;
+  }
+
+  .center_flow {
+    padding-left: calc(50% - 479px);
+    padding-right: calc(50% - 479px);
+  }
+
+  .flow p.text:first-of-type {
+    margin-bottom: 22px;
+  }
+
+  .flow__ol {
+    margin-left: 15px;
+  }
+
+  .settings {
+    padding-top: 70px;
+    padding-bottom: 71px;
+  }
+
+  .settings__slider {
+    display: none;
+  }
+
+  .settings .text.text_margin {
+    width: 805px;
+    margin: auto;
+  }
+
+  .settings__picture {
+    display: block;
+    margin-top: 72px;
+  }
+
+  .settings__content {
+    width: 749px;
+    margin: auto;
+  }
+
+  .center_mouse {
+    padding-left: calc(50% - 655px);
+    padding-right: calc(50% - 655px);
+  }
+
+  .mouse {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .mouse__img {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .mouse__text {
+    padding: 0;
+    margin: 0;
+  }
+
+  .reverse .mouse__text {
+    padding-right: 217px;
+    padding-left: 37px;
+  }
+
+  .reverse .mouse__text .title,
+  .reverse .mouse__text .text {
+    text-align: left;
+  }
+
+  .mouse__text .title,
+  .mouse__text .text {
+    text-align: right;
+  }
+
+  .mouse__text {
+    padding-right: 37px;
+    padding-left: 217px;
+  }
+
+  .mouse__item {
+    height: 557px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .mouse__img_1 {
+    background-image: url('./img/tablet/image 1hor.png');
+  }
+
+  .mouse__img_2 {
+    background-image: url('./img/tablet/image 2hor.png');
+  }
 }
 
-/* выровнять текст! */
+@media (min-width: 1920px) {
+  .top {
+    padding-bottom: 80px;
+  }
+
+  .top__img {
+    margin-top: 20px;
+    padding-top: 80px;
+  }
+
+  .bluetooth {
+    padding-top: 80px;
+    padding-bottom: 69px;
+  }
+
+  .bluetooth__icon {
+    margin-bottom: 35px;
+  }
+
+  .info {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .flow {
+    background-image: url('./img/desktop/High_Resolution_JPG-MX Lifestyle 2346 1.png');
+    padding-top: 100px;
+    padding-bottom: 870px;
+  }
+
+  .settings {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .mouse {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .mouse__img_1 {
+    background-image: url('./img/desktop/image 1.png');
+    background-size: 655px;
+    background-position: bottom right;
+  }
+
+  .mouse__img_2 {
+    background-image: url('./img/desktop/image 2.png');
+    background-size: 655px;
+    background-position: top left;
+  }
+}
