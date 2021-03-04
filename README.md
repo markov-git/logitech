@@ -1,4 +1,4 @@
-[макет на Figma](https://www.figma.com/file/KAQM3HKZzPmsbkaTt20u0p/Logitech_MX-Master-3-(Copy)-(Copy)-(Copy)?node-id=0%3A1)
+[макет на Figma](https://www.figma.com/file/W4jEQqqVHiQ1L1wk3zcP3O/Logitech_MX-Master-3-(Copy)-(Copy)-(Copy)?node-id=0%3A1)
 
 [ссылка на курс](https://geekbrains.ru/lessons/119094)
 
