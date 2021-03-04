@@ -1,221 +1,459 @@
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .header {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.header__logo {
+  width: 130px;
 }
 
 .title {
-    font-style: normal;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    color: #2F3132;
-    margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #2F3132;
+  margin-bottom: 20px;
 }
 
 .text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    color: #2F3132;
-    margin-bottom: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #2F3132;
+  margin-bottom: 0;
 }
 
 .text_margin {
-    margin-left: 34px;
-    margin-right: 33px;
+  margin-left: 34px;
+  margin-right: 33px;
 }
 
 .text_flow {
-    margin-bottom: 23px;
-    text-align: left;
-    width: 222px;
+  margin-bottom: 23px;
+  text-align: left;
+  width: 222px;
 }
 
 .text_settings {
-    color: #FFFFFF;
-    margin-left: 5px;
-    margin-right: 11px;
+  color: #FFFFFF;
+  margin-left: 5px;
+  margin-right: 11px;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .top {
-    background: #E0E1E2;
-    padding-top: 25px;
-    padding-bottom: 48px;
+  background: #E0E1E2;
+  padding-top: 25px;
+  padding-bottom: 48px;
 }
 
 .top__img {
-    margin-top: 94px;
-    height: 230px;
-    background-image: url('./img/MX-Master 1.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 67px;
+  margin-top: 94px;
+  height: 230px;
+  background-image: url('./img/mob/MX-Master 1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 67px;
 }
 
 .top__text-margin {
-    margin-left: 59px;
-    margin-right: 59px;
+  margin-left: 59px;
+  margin-right: 59px;
 }
 
 .top__arrow {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .center-content {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .bluetooth {
-    background: #EDEDED;
-    padding-top: 42px;
-    padding-bottom: 18px;
+  background: #EDEDED;
+  padding-top: 42px;
+  padding-bottom: 18px;
 }
 
 .bluetooth__icon {
-    margin-bottom: 27px;
+  margin-bottom: 27px;
 }
 
 .bluetooth__heading {
-    font-style: normal;
-    font-weight: 900;
-    font-size: 60px;
-    line-height: 70px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #C4C4C4;
-    margin-top: 31px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #C4C4C4;
+  margin-top: 31px;
 }
 
 .bluetooth__image {
-    height: 288px;
-    background-image: url('./img/High_Resolution_PNG-MX Master 3 LEFT GRAPHITE 1.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center bottom;
+  height: 288px;
+  background-image: url('./img/mob/High_Resolution_PNG-MX Master 3 LEFT GRAPHITE 1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .info {
-    padding-top: 70px;
-    padding-bottom: 63px;
+  padding-top: 70px;
+  padding-bottom: 63px;
 }
 
 .info__content {
-    margin-top: 30px;
-    margin-bottom: 28px;
-    display: flex;
-    justify-content: center;
-    gap: 6px;
+  margin-top: 30px;
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
 }
 
 .info__item {
-    border: 1px solid #2F3132;
-    flex-basis: 166px;
-    min-height: 94px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  border: 1px solid #2F3132;
+  flex-basis: 166px;
+  min-height: 94px;
+  padding-left: 18px;
+  padding-right: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .info__title {
-    font-style: normal;
-    font-weight: 900;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    color: #2F3132;
-    margin-bottom: 70px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #2F3132;
+  margin-bottom: 70px;
 }
 
 .info__text {
-    margin-left: 67px;
-    margin-right: 61px;
+  margin-left: 67px;
+  margin-right: 61px;
 }
 
 .carousel {
-    margin-bottom: 28px;
+  margin-bottom: 28px;
 }
 
 .info__item .title {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .flow {
-    padding-top: 70px;
-    padding-bottom: 219px;
-    background-image: url('./img/High_Resolution_JPG-MX Lifestyle 2346 1.png');
-    background-color: #EDEDED;
-    background-repeat: no-repeat;
-    background-position: bottom;
+  padding-top: 70px;
+  padding-bottom: 219px;
+  background-image: url('./img/mob/High_Resolution_JPG-MX Lifestyle 2346 1.png');
+  background-color: #EDEDED;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
 }
 
 .flow p.text:first-of-type {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .flow__ol {
-    margin-top: 36px;
-    margin-left: 54px;
-    padding-left: 0;
-    list-style-position: inside;
+  margin-top: 36px;
+  margin-left: 54px;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-position: inside;
 }
 
 .settings {
-    padding-top: 70px;
-    background-color: #EDEDED;
+  padding-top: 70px;
+  background-color: #EDEDED;
 }
 
 .settings__slider {
-    margin: 35px 22px 95px 23px;
+  margin: 35px 22px 95px 23px;
 }
 
 .settings__content {
-    background-color: #C4C4C4;
-    padding: 23px 22px 26px 29px;
+  background-color: #C4C4C4;
+  padding: 23px 22px 26px 29px;
 }
 
 .settings__icons {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .mouse__text {
-    margin-top: 70px;
-    margin-bottom: 20px;
+  margin-top: 70px;
+  margin-bottom: 20px;
 }
 
 .mouse__img {
-    height: 310px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+  height: 310px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .mouse__img_1 {
-    background-image: url('./img/image 1.png');
+  background-image: url('./img/mob/image 1.png');
 }
 
 .mouse__img_2 {
-    background-image: url('./img/image 2.png');
+  background-image: url('./img/mob/image 2.png');
 }
 
 .footer {
-    background-color: #2F3132;
-    height: 75px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 7px;
-    line-height: 8px;
-    text-align: center;
-    color: #C7C8C8;
-    padding-top: 22px;
+  background-color: #2F3132;
+  height: 75px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7px;
+  line-height: 8px;
+  text-align: center;
+  color: #C7C8C8;
+  padding-top: 22px;
+}
+
+@media (min-width: 768px) {
+  .top {
+    padding-top: 54px;
+    padding-bottom: 80px;
+  }
+
+  .header__logo {
+    width: 240px;
+  }
+
+  .top__img {
+    margin-top: 160px;
+    margin-bottom: 124px;
+    height: 514px;
+    background-image: url('./img/tablet/MX-Master 1.png');
+  }
+
+  .title {
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 30px;
+  }
+
+  .text {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .text_margin {
+    margin-left: 77px;
+    margin-right: 77px;
+  }
+
+  .top__text-margin {
+    margin-left: 160px;
+    margin-right: 160px;
+  }
+
+  .top__arrow {
+    margin-top: 76px;
+  }
+
+  .top__arrow .top__svg {
+    width: 57px;
+    height: 29px;
+  }
+
+  .bluetooth {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+
+  .bluetooth__icon {
+    margin-bottom: 39px;
+  }
+
+  .bluetooth__icon svg {
+    height: 40px;
+    width: 21px;
+  }
+
+  .bluetooth__image {
+    transform: translateY(3px);
+  }
+
+  .bluetooth__heading {
+    font-size: 150px;
+    line-height: 176px;
+  }
+
+  .bluetooth__image {
+    height: 595px;
+    background-image: url('./img/tablet/High_Resolution_PNG-MX Master 3 LEFT GRAPHITE 1.png');
+    margin-left: 39px;
+    margin-right: 19px;
+  }
+
+  .info {
+    padding-bottom: 61px;
+  }
+
+  .info__content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 30px;
+  }
+
+  .info__item {
+    min-height: 170px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .info__item .title {
+    margin-bottom: 10px;
+  }
+
+  .info__title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 85px;
+  }
+
+  .carousel {
+    margin-bottom: 50px;
+  }
+
+  .flow {
+    padding-bottom: 498px;
+    background-image: url('./img/tablet/High_Resolution_JPG-MX Lifestyle 2346 1.png');
+    padding-left: 64px;
+    padding-right: 68px;
+  }
+
+  .flow p.text:first-of-type {
+    margin-bottom: 30px;
+  }
+
+  .flow .text.text_margin {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .flow__ol {
+    display: flex;
+    margin-top: 70px;
+    margin-left: 0;
+  }
+
+  .text_flow {
+    width: auto;
+    padding: 8px 15px 4px 28px;
+    border-left: 1px solid #494949;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .text_flow:first-child {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .text_flow:last-child {
+    padding-right: 0;
+    padding-left: 22px;
+  }
+
+  .settings {
+    padding: 70px 65px 70px 64px;
+  }
+
+  .settings__slider {
+    margin: 54px 134px 95px 135px;
+  }
+
+  .text_settings {
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+
+  .settings .text.text_margin {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .settings__content {
+    padding: 38px 0 29px 0;
+  }
+
+  .settings__icons {
+    margin-left: 127px;
+    margin-right: 126px;
+  }
+
+  .settings__img {
+    height: 35px;
+  }
+
+  .text_settings {
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+  }
+
+  .mouse {
+    padding-left: 67px;
+    padding-right: 65px;
+  }
+
+  .mouse .text.text_margin {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .mouse__img {
+    height: 549px;
+    background-size: cover;
+    margin-left: -67px;
+    margin-right: -65px;
+  }
+
+  .mouse__text {
+    margin-bottom: 50px;
+  }
+
+  .mouse__img_1 {
+    background-image: url('./img/tablet/image 1.jpg');
+  }
+
+  .mouse__img_2 {
+    background-image: url('./img/tablet/image 2.jpg');
+  }
+
+  .footer {
+    height: 150px;
+    padding-top: 47px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 1160px / 2);
+    padding-right: calc(50% - 1160px / 2);
+  }
 }
