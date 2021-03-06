@@ -537,10 +537,6 @@ body {
     width: 21px;
   }
 
-  .bluetooth__image {
-    transform: translateY(3px);
-  }
-
   .bluetooth__heading {
     font-size: 150px;
     line-height: 176px;
@@ -549,6 +545,7 @@ body {
   .bluetooth__image {
     height: 595px;
     background-image: url('./img/tablet/High_Resolution_PNG-MX Master 3 LEFT GRAPHITE 1.png');
+    transform: translateY(3px);
     margin-left: 39px;
     margin-right: 19px;
   }
@@ -739,21 +736,20 @@ body {
     line-height: 16px;
   }
 }
-
-
-/*bootstrap elements*/
 @media (min-width: 992px) {
-
-
   .navbar-expand-lg .navbar-toggler {
     display: block;
   }
 }
-
 @media (min-width: 1024px) {
   .center {
     padding-left: calc(50% - 1160px / 2);
     padding-right: calc(50% - 1160px / 2);
+  }
+
+  .center_header {
+    padding-left: max(calc(50% - 1160px / 2), 61px);
+    padding-right: max(calc(50% - 1160px / 2), 62px);
   }
 
   .navbar-expand-lg .navbar-collapse {
@@ -763,11 +759,6 @@ body {
 
   .navbar-expand-lg .navbar-toggler {
     display: none;
-  }
-
-  .navbar {
-    margin-left: 61px;
-    margin-right: 62px;
   }
 
   .header {
@@ -862,7 +853,6 @@ body {
   }
 
   .text {
-
     font-size: 20px;
     line-height: 23px;
   }
@@ -890,10 +880,6 @@ body {
     margin-bottom: 41px;
   }
 
-  .bluetooth__heading {
-    margin-top: 14px;
-  }
-
   .bluetooth__image {
     height: 426px;
     background: url('./img/desktop/High_Resolution_PNG-MX Master 3 FRONT GRAPHITE 1.png') no-repeat 0 119px,
@@ -906,6 +892,7 @@ body {
   }
 
   .bluetooth__heading {
+    margin-top: 14px;
     font-size: 96px;
     line-height: 112px;
     display: flex;
@@ -1035,13 +1022,12 @@ body {
   }
 
   .mouse__text {
-    padding: 0;
     margin: 0;
+    padding: 0 37px 0 calc(50% - 400px);
   }
 
   .reverse .mouse__text {
-    padding-right: 217px;
-    padding-left: 37px;
+    padding: 0 calc(50% - 400px) 0 37px;
   }
 
   .reverse .mouse__text .title,
@@ -1052,11 +1038,6 @@ body {
   .mouse__text .title,
   .mouse__text .text {
     text-align: right;
-  }
-
-  .mouse__text {
-    padding-right: 37px;
-    padding-left: 217px;
   }
 
   .mouse__item {
