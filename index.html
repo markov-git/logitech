@@ -14,20 +14,27 @@
 </head>
 <body>
 
-<section class="top">
+<section class="top" id="top">
   <header class="header center">
 
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <a href="index.html"><img class="header__logo header__logo_dark" src="./img/mob/Logo_Logitech_dark%201.svg"
-                                  alt="logo"></a>
-        <a href="index.html"><img class="header__logo header__logo_light" src="./img/desktop/Logo_Logitech%201.svg"
-                                  alt="logo"></a>
+        <a href="#">
+          <picture>
+            <source class="header__logo" srcset="./img/mob/Logo_Logitech_dark1.png" type="image/svg+xml"
+                    media="(max-width: 768px)">
+            <source class="header__logo" srcset="./img/tablet/Logo_Logitech_dark1.svg" media="(max-width: 1023px)">
+            <source class="header__logo" srcset="./img/desktop/Logo_Logitech.png">
+            <img class="header__logo" src="./img/mob/Logo_Logitech_dark1.png" alt="Logo">
+          </picture>
+        </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                id="navbar-toggler"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -139,7 +146,8 @@
         <div class="carousel-item">
           <picture>
             <source class="d-block w-100" srcset="./img/mob/soft-slider-image/linoleum.png" media="(max-width: 767px)">
-            <source class="d-block w-100" srcset="./img/tablet/soft-slider-image/linoleum.png" media="(max-width: 1023px)">
+            <source class="d-block w-100" srcset="./img/tablet/soft-slider-image/linoleum.png"
+                    media="(max-width: 1023px)">
             <source class="d-block w-100" srcset="./img/desktop/soft-slider-image/linoleum.png">
             <img class="d-block w-100" src="./img/tablet/soft-slider-image/linoleum.png" alt="img">
           </picture>
@@ -155,7 +163,8 @@
         <div class="carousel-item">
           <picture>
             <source class="d-block w-100" srcset="./img/mob/soft-slider-image/marble.png" media="(max-width: 767px)">
-            <source class="d-block w-100" srcset="./img/tablet/soft-slider-image/marble.png" media="(max-width: 1023px)">
+            <source class="d-block w-100" srcset="./img/tablet/soft-slider-image/marble.png"
+                    media="(max-width: 1023px)">
             <source class="d-block w-100" srcset="./img/desktop/soft-slider-image/marble.png">
             <img class="d-block w-100" src="./img/tablet/soft-slider-image/marble.png" alt="img">
           </picture>
@@ -208,24 +217,75 @@
   </div>
 
   <div id="carousel2" class="carousel slide settings__slider" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active"
+    <div class="carousel-indicators settings-slider">
+      <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0"
+              class="btn active"
               aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1"
+              class="btn"
               aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2"
+              class="btn"
               aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carousel2" data-bs-slide-to="3"
+              class="btn"
+              aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carousel2" data-bs-slide-to="4"
+              class="btn"
+              aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carousel2" data-bs-slide-to="5"
+              class="btn"
+              aria-label="Slide 6"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/mob/f370c2e.png" class="d-block w-100" alt="...">
+        <picture>
+          <source class="d-block w-100" srcset="./img/mob/settings-slider-image/f370c2e.png" media="(max-width: 767px)">
+          <source class="d-block w-100" srcset="./img/tablet/settings-slider-image/f370c2e.png">
+          <img class="d-block w-100" src="./img/tablet/settings-slider-image/f370c2e.png" alt="img">
+        </picture>
       </div>
+
       <div class="carousel-item">
-        <img src="img/mob/f370c2e.png" class="d-block w-100" alt="...">
+        <picture>
+          <source class="d-block w-100" srcset="./img/mob/settings-slider-image/fecdd75.png" media="(max-width: 767px)">
+          <source class="d-block w-100" srcset="./img/tablet/settings-slider-image/fecdd75.png">
+          <img class="d-block w-100" src="./img/tablet/settings-slider-image/fecdd75.png" alt="img">
+        </picture>
       </div>
+
       <div class="carousel-item">
-        <img src="img/mob/f370c2e.png" class="d-block w-100" alt="...">
+        <picture>
+          <source class="d-block w-100" srcset="./img/mob/settings-slider-image/b74bcf9.png" media="(max-width: 767px)">
+          <source class="d-block w-100" srcset="./img/tablet/settings-slider-image/b74bcf9.png">
+          <img class="d-block w-100" src="./img/tablet/settings-slider-image/b74bcf9.png" alt="img">
+        </picture>
       </div>
+
+      <div class="carousel-item">
+        <picture>
+          <source class="d-block w-100" srcset="./img/mob/settings-slider-image/c075726.png" media="(max-width: 767px)">
+          <source class="d-block w-100" srcset="./img/tablet/settings-slider-image/c075726.png">
+          <img class="d-block w-100" src="./img/tablet/settings-slider-image/c075726.png" alt="img">
+        </picture>
+      </div>
+
+      <div class="carousel-item">
+        <picture>
+          <source class="d-block w-100" srcset="./img/mob/settings-slider-image/e987ca8.png" media="(max-width: 767px)">
+          <source class="d-block w-100" srcset="./img/tablet/settings-slider-image/e987ca8.png">
+          <img class="d-block w-100" src="./img/tablet/settings-slider-image/e987ca8.png" alt="img">
+        </picture>
+      </div>
+
+      <div class="carousel-item">
+        <picture>
+          <source class="d-block w-100" srcset="./img/mob/settings-slider-image/f8bf6eb.png" media="(max-width: 767px)">
+          <source class="d-block w-100" srcset="./img/tablet/settings-slider-image/f8bf6eb.png">
+          <img class="d-block w-100" src="./img/tablet/settings-slider-image/f8bf6eb.png" alt="img">
+        </picture>
+      </div>
+
     </div>
   </div>
   <div class="settings__content">
@@ -269,8 +329,39 @@
   Все права защищены
 </footer>
 
+<div class="sidebar" id="sidebar">
+  <div class="exit-btn sidebar__exit-btn" id="exit-btn"></div>
+  <div class="sidebar__logo">
+    <img src="img/sidebar/Logo_Logitech_light.svg" alt="Logo">
+  </div>
+
+  <ul class="sidebar__menu" id="sidebar__menu">
+    <li><a href="#top">БЕЗ ПРОВОДОВ</a></li>
+    <li><a href="#bluetooth" class="active">ЗА ЛЮБЫМ СТОЛОМ</a></li>
+    <li><a href="#info">ОДНОВРЕМЕННО С НЕСКОЛЬКИХ<br>УСТРОЙСТВ</a></li>
+    <li><a href="#flow">С ИНДИВИДУАЛЬНЫМИ<br>НАСТРОЙКАМИ</a></li>
+    <li><a href="#settings">БЫСТРЕЕ,<br>ЧЕМ КОГДА-ЛИБО</a></li>
+    <li><a href="#mouse">КОМФОРТНО.<br>ЭРГОНОМИЧНО. ИНТУИТИВНО.</a></li>
+  </ul>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
+<script>
+const toggle = document.querySelector('#navbar-toggler')
+const sidebar = document.querySelector('#sidebar')
+const exit_btn = document.querySelector('#exit-btn')
+const links = document.querySelectorAll('#sidebar__menu a')
+
+const toggleSideBar = () => {
+  sidebar.classList.toggle('active')
+}
+toggle.addEventListener('click', toggleSideBar)
+exit_btn.addEventListener('click', toggleSideBar)
+links.forEach(link => {
+  link.addEventListener('click', toggleSideBar)
+})
+</script>
 </body>
 </html>

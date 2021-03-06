@@ -2,6 +2,68 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  padding-bottom: 208px;
+  z-index: 5;
+  width: 100%;
+  background: #2F3132;
+  transition: .3s;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.exit-btn {
+  position: absolute;
+  top: 14px;
+  right: 15px;
+  background-image: url('./img/sidebar/Vector 8.svg');
+  height: 41px;
+  width: 41px;
+}
+
+.sidebar__logo {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.sidebar__logo img {
+  width: 130px;
+}
+
+.sidebar__menu {
+  margin-top: 148px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+.sidebar__menu li {
+  list-style: none;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.sidebar__menu li a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  color: #C4C4C4;
+}
+
+.sidebar__menu li a.active {
+  color: #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+}
+
 .navbar {
   padding-top: 25px;
 }
@@ -14,7 +76,27 @@ body {
 
 .navbar .navbar-toggler {
   position: absolute;
-  right: 25px;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  top: 25px;
+  right: 29px;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url('./img/mob/menu-burger.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 16px;
+}
+
+.navbar a {
+  margin: 0 auto;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  display: none !important;
 }
 
 .header__logo_light {
@@ -66,7 +148,6 @@ body {
 
 .top {
   background: #E0E1E2;
-  /*padding-top: 25px;*/
   padding-bottom: 48px;
 }
 
@@ -268,6 +349,31 @@ body {
   background-color: #EDEDED;
 }
 
+.settings-slider {
+  margin: 0;
+  top: calc(100% + 20px);
+  bottom: -35px;
+}
+
+.settings-slider .btn {
+  border: none;
+  border-radius: 50%;
+  margin: 0 15px 0 0;
+  opacity: 1;
+  padding: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #C4C4C4;
+}
+
+.settings-slider .btn.active {
+  background-color: #2F3132;
+}
+
+.settings-slider .btn:last-of-type {
+  margin-right: 0;
+}
+
 .settings__picture {
   display: none;
 }
@@ -322,6 +428,54 @@ body {
 @media (min-width: 768px) {
   .top {
     padding-bottom: 80px;
+  }
+
+  .navbar .navbar-toggler {
+    top: 54px;
+    right: 58px;
+  }
+
+  .navbar-light .navbar-toggler-icon {
+    background-image: url('./img/tablet/menu-burger.svg');
+    width: 61px;
+    height: 32px;
+  }
+
+  .sidebar {
+    padding-bottom: 141px;
+  }
+
+  .exit-btn {
+    top: 45px;
+    right: 65px;
+    background-image: url('./img/sidebar/Vector_tablet.svg');
+    height: 87px;
+    width: 87px;
+  }
+
+  .sidebar__logo {
+    margin-top: 64px;
+  }
+
+  .sidebar__logo img {
+    width: 240px;
+  }
+
+  .sidebar__menu {
+    margin-top: 123px;
+  }
+
+  .sidebar__menu li {
+    margin-bottom: 59px;
+  }
+
+  .sidebar__menu li a {
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .sidebar__menu li a.active {
+    border-bottom: 4px solid #FFFFFF;
   }
 
   .navbar {
@@ -506,7 +660,18 @@ body {
   }
 
   .settings__slider {
-    margin: 54px 134px 95px 135px;
+    margin: 54px 134px 148px 135px;
+  }
+
+  .settings-slider {
+    top: calc(100% + 53px);
+    bottom: -78px;
+  }
+
+  .settings-slider .btn {
+    margin-right: 25px;
+    width: 25px;
+    height: 25px;
   }
 
   .text_settings {
@@ -575,10 +740,34 @@ body {
   }
 }
 
+
+/*bootstrap elements*/
+@media (min-width: 992px) {
+
+
+  .navbar-expand-lg .navbar-toggler {
+    display: block;
+  }
+}
+
 @media (min-width: 1024px) {
   .center {
     padding-left: calc(50% - 1160px / 2);
     padding-right: calc(50% - 1160px / 2);
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+
+  .navbar {
+    margin-left: 61px;
+    margin-right: 62px;
   }
 
   .header {
@@ -586,6 +775,10 @@ body {
     height: 100px;
     display: flex;
     align-items: center;
+  }
+
+  .header__logo {
+    width: 150px;
   }
 
   .navbar {
@@ -804,7 +997,15 @@ body {
 
   .settings__picture {
     display: block;
+    max-width: 1171px;
     margin-top: 72px;
+    margin-left: 54px;
+    margin-right: 55px;
+  }
+
+  .settings__picture img {
+    width: 100%;
+    height: auto;
   }
 
   .settings__content {
@@ -883,6 +1084,11 @@ body {
   .top__img {
     margin-top: 20px;
     padding-top: 80px;
+  }
+
+  .navbar {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .bluetooth {
